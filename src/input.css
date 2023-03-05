@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .ul-item{
+        @apply py-3 px-6  rounded-md flex justify-between mb-3;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adding taiwind css -->
+    <link rel="stylesheet" href="./output.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body class="font-sans-serif flex justify-center items-center w-full h-screen">
+    <main class="card flex  flex-col lg:flex-row h-screen lg:h-3/5 items-end lg:shadow-xl">
+      <section
+        class="resolt h-2/5 lg:h-full flex flex-col justify-center rounded-b-3xl text-neutral-blue items-center text-center bg-gradient-to-b from-gradient-slate-blue to-gradient-royal-blue px-20 lg:px-10  lg:rounded-3xl"
+      >
+        <h4 class="opacity-60 font-bold text-xl">Your Result</h4>
+        <div class="display">
+          <div
+            class="resolt text-5xl font-bold aspect-square w-32 lg:w-40 rounded-full bg-gradient-to-b from-gradient-violet-blue to-gradient-persian-blue flex items-center flex-col justify-center mt-6"
+          >
+            76
+            <h4 class="text-sm opacity-60">of 100</h4>
+          </div>
+        </div>
+        <h2 class="text-3xl">Great</h2>
+        <p class="opacity-60 lg:text-sm">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="summary h-3/5 lg:h-full  px-10 mt-5 w-full">
+        <h3 class="text-2xl font-bold mb-3">Summary</h3>
+        <ul class="score-bord">
+          <li class="bg-primary-red-100 ul-item">
+            <p class="text-primary-red flex gap-1 font-bold">
+              <img src="../src/assets/images/icon-reaction.svg" alt="" />
+              Reaction
+            </p>
+            <div class="text-neutral-gray">
+              <span class="font-bold">80</span> / 100
+            </div>
+          </li>
+          <li class="bg-primary-yellow-100 ul-item">
+            <p class="text-primary-yellow flex gap-1 font-bold">
+              <img src="../src/assets/images/icon-memory.svg" alt="" />
+              Memory
+            </p>
+            <div class="text-neutral-gray">
+              <span class="font-bold">92</span> / 100
+            </div>
+          </li>
+          <li class="bg-primary-green-100 ul-item">
+            <p class="text-primary-green font-bold flex gap-1">
+              <img src="../src/assets/images/icon-verbal.svg" alt="" />
+              Verba
+            </p>
+            <div class="text-neutral-gray text-opacity">
+              <span class="font-bold">61</span> / 100
+            </div>
+          </li>
+          <li class="bg-primary-blue-100 ul-item">
+            <p class="text-primary-blue font-bold flex gap-1">
+              <img src="../src/assets/images/icon-visual.svg" alt="" />
+              Visual
+            </p>
+            <div class="text-neutral-gray text-opacity">
+              <span class="font-bold">72</span> / 100
+            </div>
+          </li>
+        </ul>
+        <button style="color: white" class="bg-neutral-gray text-white w-full py-4 rounded-full font-bold mt-4">Continue</button>
+      </section>
+    </main>
+  </body>
+</html>
